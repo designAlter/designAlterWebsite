@@ -1,0 +1,25 @@
+body {
+  footer.footer-design-alter {
+    background-color: #303538;
+    padding: 2rem 0;
+
+    .col-sm-6 {
+      @include respond-below( xs ) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    h4, p {
+      color:$design_alter_color__white;
+      font-size: 1.2rem;
+    }
+
+    .icons-footer {
+      a {
+        color: $design_alter_color__white;
+        font-size: 1.2rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
