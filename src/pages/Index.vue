@@ -15,20 +15,23 @@
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
 
-    <strategicAlliance />
+    <StrategicAlliance />
 
+    <WhatIsDatum />
   </Layout>
 </template>
 
 <script>
-import strategicAlliance from '~/components/da-section-strategic-alliance.vue'
+import StrategicAlliance from '~/components/da-section-strategic-alliance.vue'
 
+import WhatIsDatum from "../components/What-is-datum";
 export default {
+  components: { WhatIsDatum },
   metaInfo: {
     title: 'Hello, world!'
   },
   components:{
-    strategicAlliance
+    StrategicAlliance
   }
 }
 </script>
