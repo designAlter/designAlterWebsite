@@ -15,13 +15,20 @@
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
 
+    <strategicAlliance />
+
   </Layout>
 </template>
 
 <script>
+import strategicAlliance from '~/components/da-section-strategic-alliance.vue'
+
 export default {
   metaInfo: {
     title: 'Hello, world!'
+  },
+  components:{
+    strategicAlliance
   }
 }
 </script>

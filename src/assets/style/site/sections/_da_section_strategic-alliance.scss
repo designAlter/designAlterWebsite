@@ -1,0 +1,19 @@
+body .strategic-alliance-container{
+    .title-section{
+        text-align: center;
+
+        h1{
+            font-weight: bold;
+        }
+    }
+    .second-color-title{
+        color: $design_alter_color__second;
+    }
+    .hr-title{
+        width: 5%;
+        height: 10%;
+        border-radius: 5px;
+        color: $design_alter_color__primary;
+        opacity: 100%;
+    }
+}
