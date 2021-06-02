@@ -1,0 +1,55 @@
+body {
+  .section-datum {
+    background: url( '../../assets/images/background_datum.jpg' ) no-repeat center;
+    padding: 4rem 0;
+    background-size: cover;
+
+    .container-datum {
+      .row {
+        @include respond-below( md ) {
+          align-items: center;
+        }
+
+        .data-datum {
+          h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 8rem;
+
+            @include respond-below( lg ) {
+              margin-bottom: 4rem;
+            }
+
+            @include respond-below( md ) {
+              margin-bottom: 2rem;
+            }
+
+            svg, span {
+              color: $design_alter_color__primary;
+            }
+          }
+
+          p {
+            font-size: 1.2rem;
+            text-align: left;
+            line-height: 35px;
+          }
+        }
+
+        .image-datum {
+          @include respond-below( sm ) {
+            text-align: center;
+          }
+
+          img {
+            padding: 0 2rem;
+
+            @include respond-below( md ) {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

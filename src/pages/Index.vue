@@ -14,12 +14,14 @@
       <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
-
+    <WhatIsDatum />
   </Layout>
 </template>
 
 <script>
+import WhatIsDatum from "../components/What-is-datum";
 export default {
+  components: { WhatIsDatum },
   metaInfo: {
     title: 'Hello, world!'
   }
