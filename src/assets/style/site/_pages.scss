@@ -2,4 +2,9 @@ body {
   h1 {
     color: $design_alter_color__primary;
   }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 }
