@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid="md" class="strategic-alliance-container">
+  <b-container fluid="md" class="mt-5 strategic-alliance-container">
     <b-row>
       <b-col md="12" class="title-section">
         <h1><span class="second-color-title">Alianza</span> Estrategica</h1>
