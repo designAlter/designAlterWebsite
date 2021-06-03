@@ -12,8 +12,10 @@ body {
 
         .data-datum {
           h2 {
+            position: relative;
             font-size: 2.5rem;
             font-weight: bold;
+            padding-left: 1.8rem;
             margin-bottom: 8rem;
 
             @include respond-below( lg ) {
@@ -22,6 +24,12 @@ body {
 
             @include respond-below( md ) {
               margin-bottom: 2rem;
+            }
+
+            svg {
+              position: absolute;
+              top: .5rem;
+              left: -20px;
             }
 
             svg, span {
