@@ -1,21 +1,25 @@
 <template>
   <Layout>
-    <HeaderDatum/>
-    <WhatIsDatum/>
-    <MasterPlan/>
+    <HeaderDatum />
+    <WhatIsDatum />
+    <StrategicAlliance />
+    <MasterPlan />
   </Layout>
 </template>
 
 <script>
+
+import StrategicAlliance from '~/components/Strategic-alliance'
 import WhatIsDatum from "../components/What-is-datum";
 import HeaderDatum from "../components/Header-datum";
 import MasterPlan from "../components/Master-plan";
 
+    
 export default {
-  components: { MasterPlan, WhatIsDatum, HeaderDatum },
+  components: { StrategicAlliance, MasterPlan, WhatIsDatum, HeaderDatum },
   metaInfo: {
     title: 'Hello, world!'
-  }
+  },
 }
 </script>
 
