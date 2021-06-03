@@ -9,7 +9,7 @@
 
 <script>
 
-import StrategicAlliance from '~/components/da-section-strategic-alliance.vue'
+import StrategicAlliance from '~/components/Strategic-alliance'
 import WhatIsDatum from "../components/What-is-datum";
 import HeaderDatum from "../components/Header-datum";
 import MasterPlan from "../components/Master-plan";
