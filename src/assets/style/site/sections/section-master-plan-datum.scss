@@ -1,0 +1,95 @@
+body {
+  .section-master-plan-datum {
+    background-color: #f9f8f6;
+
+    .container-master-plan-datum {
+      .row {
+        @include respond-below( md ) {
+          align-items: center;
+        }
+
+        .master-datum-data {
+          padding: 6rem 1rem 4rem;
+
+          @include respond-below( sm ) {
+            padding: 6rem 1rem 0;
+          }
+
+          h2 {
+            position: relative;
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding-left: 1.8rem;
+            margin-bottom: 2rem;
+
+            @include respond-below( lg ) {
+              margin-bottom: 4rem;
+            }
+
+            @include respond-below( md ) {
+              margin-bottom: 2rem;
+            }
+
+            span {
+              font-size: 3rem;
+            }
+
+            svg {
+              position: absolute;
+              top: 12px;
+              left: -20px;
+            }
+
+            svg, span {
+              color: $design_alter_color__primary;
+            }
+          }
+
+          p {
+            font-size: 1.2rem;
+            text-align: left;
+            line-height: 35px;
+          }
+
+          a {
+            color: #04090C;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+
+            svg {
+              color: $design_alter_color__primary;
+            }
+          }
+
+          .master-datum-img {
+            width: 40%;
+            text-align: center;
+            float: right;
+
+            img {
+              margin-bottom: 1rem;
+            }
+
+            h4 {
+              font-weight: bold;
+            }
+          }
+        }
+
+        .master-image {
+          flex-wrap: wrap;
+          align-self: flex-end;
+
+          @include respond-below( md ) {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}
