@@ -1,0 +1,29 @@
+<template>
+  <div class="section-header-datum">
+    <div class="background-color-video"></div>
+    <video src="../assets/video/Definicion_de_datums.mp4" autoplay loop muted
+      poster="../assets/images/header-datum.jpg"></video>
+    <b-container class="container-header">
+      <div class="content-info">
+        <h2>DatumSuite5.0</h2>
+        <p>Positioning Business Ideas</p>
+        <hr>
+        <h1>Digital Interactive Master Plans</h1>
+      </div>
+      <div class="content-icons">
+        <a href="#">
+          <b-icon icon="instagram" aria-hidden="true"></b-icon>
+        </a>
+        <a href="#">
+          <b-icon icon="linkedin" aria-hidden="true"></b-icon>
+        </a>
+      </div>
+    </b-container>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Header-datum"
+}
+</script>
