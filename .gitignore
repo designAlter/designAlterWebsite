@@ -2,6 +2,7 @@
 .cache
 .DS_Store
 src/.temp
+src/assets/video/*
 node_modules
 dist
 package-lock.json
