@@ -24,15 +24,15 @@
 <script>
 import StrategicAlliance from '~/components/da-section-strategic-alliance.vue'
 
-import WhatIsDatum from "../components/What-is-datum";
+import WhatIsDatum from "~/components/What-is-datum";
 export default {
-  components: { WhatIsDatum },
+  components: { 
+    WhatIsDatum,
+    StrategicAlliance
+    },
   metaInfo: {
     title: 'Hello, world!'
   },
-  components:{
-    StrategicAlliance
-  }
 }
 </script>
 
