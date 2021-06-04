@@ -18,6 +18,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Design alter',
+  siteUrl: 'https://datum.co',
   icon: {
     favicon: './src/favicon.png',
   },
@@ -29,5 +30,20 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-  }
+  },
+  plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+        exclude: ["/exclude-me"],
+        config: {
+          '/*': {
+            changefreq: 'weekly',
+            priority: 0.5,
+          },
+        }
+      }
+    }
+  ],
 }
