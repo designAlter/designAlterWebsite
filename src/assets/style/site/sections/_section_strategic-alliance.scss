@@ -1,0 +1,62 @@
+body .strategic-alliance-container{
+    .title-section{
+        text-align: center;
+
+        h1{
+            font-weight: bold;
+        }
+    }
+    .text-center{
+        text-align: center;
+    }
+    .second-color-title{
+        color: $design_alter_color__second;
+    }
+    .hr-title{
+        width: 5%;
+        height: 10%;
+        border-radius: 5px;
+        color: $design_alter_color__primary;
+        opacity: 100%;
+    }
+    .margin-from-title{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .text-describe{
+        text-align: left;
+    }
+
+    #read-more2{
+        display:none;
+    }
+
+    .read-more-button{
+        text-decoration: none;
+        width: auto;
+        color: $design_alter_color__second;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    .button-row{
+        justify-content: flex-end;
+    }
+    .icon-row{
+        width: auto;
+        color: $design_alter_color__primary;
+        padding: 0px;
+    }
+    .dn{
+        display: none;
+    }
+
+    @include respond-below(xs){
+        #image-plus{
+          display: none;  
+        }
+    }
+}

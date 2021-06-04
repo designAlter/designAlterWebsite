@@ -17,8 +17,14 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
   Vue.use(BootstrapVueIcons)
-  head.link.push({
-    rel: 'stylesheet',
-    href: encodeURI('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap')
-  })
+  head.link.push(
+    {
+      rel: 'stylesheet',
+      href: encodeURI('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap')
+    },
+    {
+      rel: 'stylesheet',
+      href: encodeURI('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+    }
+  )
 }

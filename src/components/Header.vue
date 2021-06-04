@@ -5,7 +5,7 @@
       <b-collapse  id="nav-collapse" class="content-menu-items" is-nav>
         <b-navbar-nav class="menu-ul">
           <b-nav-item href="#section-datum">Que es un Datum?</b-nav-item>
-          <b-nav-item href="#">Alianza Tecnológica</b-nav-item>
+          <b-nav-item href="#strategic-alliance-container">Alianza Tecnológica</b-nav-item>
           <b-nav-item href="#">Planes Maestros Interactivos</b-nav-item>
           <b-nav-item href="#">Contacto</b-nav-item>
         </b-navbar-nav>
