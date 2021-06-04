@@ -18,6 +18,9 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Design alter',
+  icon: {
+    favicon: './src/favicon.png',
+  },
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']

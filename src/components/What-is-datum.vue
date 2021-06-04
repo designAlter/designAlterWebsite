@@ -8,11 +8,12 @@
             Qué es un <span>Datum?</span>
           </h2>
           <p>
-            Los DATUMS son posiciones DETERMINADAS en la tierra usadas para georreferenciar ideas de negocios con el fin de establecer integraciones digitales alternas entre territorios, disciplinas y usuarios, fusionando el diseño y la tecnología.
+            Un Datum es un punto en la tierra usado para localizar la latitud y la longitudde una idea que tenga el
+            potencial de informar, integrar y generar nuevos negocios que beneficien a la sociedad.
           </p>
         </b-col>
         <b-col class="image-datum" md="6">
-          <g-image center alt="Example image" src="../assets/images/Datum.png" />
+          <g-image center alt="Datum" src="../assets/images/Datum.png"/>
         </b-col>
       </b-row>
     </b-container>

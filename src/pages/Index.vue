@@ -2,6 +2,7 @@
   <Layout>
     <HeaderDatum/>
     <WhatIsDatum/>
+    <ProductsServices/>
     <MasterPlan/>
   </Layout>
 </template>
@@ -10,11 +11,12 @@
 import WhatIsDatum from "../components/What-is-datum";
 import HeaderDatum from "../components/Header-datum";
 import MasterPlan from "../components/Master-plan";
+import ProductsServices from "../components/Products-services";
 
 export default {
-  components: { MasterPlan, WhatIsDatum, HeaderDatum },
+  components: { MasterPlan, WhatIsDatum, ProductsServices, HeaderDatum },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home'
   }
 }
 </script>
