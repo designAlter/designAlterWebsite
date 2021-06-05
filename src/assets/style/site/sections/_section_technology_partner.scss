@@ -1,0 +1,33 @@
+body #technological-partener-section {
+    background: url("../../assets/images/Technological_partner_section.png") no-repeat center;
+    padding: 4rem 0;
+    background-size: cover;
+    width: 100%;
+
+    .title_section {
+        color: white;
+        margin-top: 10%;
+    }
+    #poweredBy {
+        max-width: 30%;
+        margin-left: 7%;
+    }
+    .title_form_section {
+        color: $design_alter_color__second;
+        font-weight: bold;
+    }
+    label{
+        font-weight: bold;
+    }
+    .hr-title{
+        width: 5%;
+        height: 2%;
+        border-radius: 5px;
+        color: $design_alter_color__primary;
+        opacity: 100%;
+    }
+    .padding-form-section{
+        padding-top: 45%;
+        padding-bottom: 25%;
+    }
+}
