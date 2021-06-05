@@ -1,8 +1,9 @@
 <template>
   <Layout>
-    <HeaderDatum />
-    <WhatIsDatum />
+    <HeaderDatum/>
+    <WhatIsDatum/>
     <StrategicAlliance />
+    <ProductsServices/>
     <MasterPlan />
     <TechnologicalPartner />
   </Layout>
@@ -11,17 +12,19 @@
 <script>
 
 import StrategicAlliance from '~/components/Strategic-alliance'
-import WhatIsDatum from "../components/What-is-datum";
-import HeaderDatum from "../components/Header-datum";
-import MasterPlan from "../components/Master-plan";
+import WhatIsDatum from "~/components/What-is-datum";
+import HeaderDatum from "~/components/Header-datum";
+import MasterPlan from "~/components/Master-plan";
+import ProductsServices from "~/components/Products-services";
 import TechnologicalPartner from "../components/Technological_partner";
+
 
     
 export default {
-  components: { StrategicAlliance, MasterPlan, WhatIsDatum, HeaderDatum, TechnologicalPartner },
+  components: { MasterPlan, WhatIsDatum, ProductsServices, HeaderDatum, StrategicAlliance, TechnologicalPartner },
   metaInfo: {
-    title: 'Hello, world!'
-  },
+    title: 'Home'
+  }
 }
 </script>
 

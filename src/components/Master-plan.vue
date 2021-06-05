@@ -17,12 +17,12 @@
             Saber más
           </b-link>
           <div class="master-datum-img">
-            <g-image center alt="Example image" src="../assets/images/recurso.png"/>
+            <g-image center alt="Tour Datum" src="../assets/images/TourDatum.png"/>
             <h4>TourDatum</h4>
           </div>
         </b-col>
         <b-col class="master-image" md="6">
-          <g-image center alt="Example image" src="../assets/images/cell_phone_master.png"/>
+          <g-image center alt="Cell Phone Master Datum" src="../assets/images/cell_phone_master.png"/>
         </b-col>
       </b-row>
     </b-container>
