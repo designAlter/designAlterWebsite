@@ -4,7 +4,8 @@
     <WhatIsDatum/>
     <StrategicAlliance />
     <ProductsServices/>
-    <MasterPlan/>
+    <MasterPlan />
+    <TechnologicalPartner />
   </Layout>
 </template>
 
@@ -15,10 +16,12 @@ import WhatIsDatum from "~/components/What-is-datum";
 import HeaderDatum from "~/components/Header-datum";
 import MasterPlan from "~/components/Master-plan";
 import ProductsServices from "~/components/Products-services";
+import TechnologicalPartner from "../components/Technological_partner";
+
 
     
 export default {
-  components: { MasterPlan, WhatIsDatum, ProductsServices, HeaderDatum, StrategicAlliance },
+  components: { MasterPlan, WhatIsDatum, ProductsServices, HeaderDatum, StrategicAlliance, TechnologicalPartner },
   metaInfo: {
     title: 'Home'
   }
