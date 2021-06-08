@@ -6,8 +6,8 @@
         <b-navbar-nav class="menu-ul">
           <b-nav-item href="#section-datum">Que es un Datum?</b-nav-item>
           <b-nav-item href="#strategic-alliance-container">Alianza Tecnológica</b-nav-item>
-          <b-nav-item href="#">Planes Maestros Interactivos</b-nav-item>
-          <b-nav-item href="#">Contacto</b-nav-item>
+          <b-nav-item href="#section-master-plan-datum">Planes Maestros Interactivos</b-nav-item>
+          <b-nav-item href="#technological-partener-section">Contacto</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
