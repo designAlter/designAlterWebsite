@@ -17,12 +17,6 @@
 <script>
 export default {
   name: "Header",
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
   methods: {
     handleScroll (event) {
       let element = document.getElementById('menu-datum-site');
@@ -34,6 +28,9 @@ export default {
         element.classList.remove( 'scrolled' );
       }
     }
+  },
+  beforeMount(){
+      window.addEventListener('scroll', this.handleScroll);
   }
 }
 </script>
