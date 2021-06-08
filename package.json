@@ -7,6 +7,7 @@
     "build": "gridsome build"
   },
   "dependencies": {
+    "gh-pages": "^3.2.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {

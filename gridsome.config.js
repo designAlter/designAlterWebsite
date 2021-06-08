@@ -18,7 +18,8 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Design alter',
-  siteUrl: 'https://datum.co',
+  siteUrl: 'https://cjuanjosec04.github.io',
+  pathPrefix: '/designAlter',
   icon: {
     favicon: './src/favicon.png',
   },
