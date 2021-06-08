@@ -1,9 +1,12 @@
 <template>
-  <p class="mt-5 text-describe">
+  <div class="mt-5 text-describe">
   
     <span id="text-preview">
       {{ previewMessage }}
       <span :id="`dots${id_section}`">...</span>
+      <span class="dn" :id="`read-more${id_section}`">
+        {{ secondText }}
+      </span>
     </span>
     <b-row class="button-row">
       <b-icon
@@ -20,11 +23,6 @@
       >
         {{ buttonTextReadMore }}
       </b-button>
-    </b-row>
-    <span class="dn" :id="`read-more${id_section}`">
-      {{ secondText }}
-    </span>
-    <b-row class="button-row">
       <b-icon icon="chevron-up" :id="`icon-row-down${id_section}`" class="icon-row dn my-auto">
       </b-icon>
       <b-button
@@ -36,7 +34,7 @@
         {{ buttonTextReadLess }}
       </b-button>
     </b-row>
-  </p>
+  </div>
 </template>
 
 <script>
