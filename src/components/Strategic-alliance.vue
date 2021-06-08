@@ -26,11 +26,11 @@
       <b-col class="text-center" sm="5">
         <g-image alt="Example image" src="../assets/images/CafetoLogo.png" />
         <ReadMoreComponent
-          :buttonTextReadLess="buttonTextReadLess2"
-          :buttonTextReadMore="buttonTextReadMore2"
-          :previewMessage="previewMessage2"
-          :secondText="secondText2"
-          :id_section="id_section2"
+          :buttonTextReadLess="buttonTextReadLessB2"
+          :buttonTextReadMore="buttonTextReadMoreB2"
+          :previewMessage="previewMessageB2"
+          :secondText="secondTextB2"
+          :id_section="id_sectionB2"
         />
       </b-col>
     </b-row>
@@ -38,12 +38,10 @@
 </template>
 
 <script>
-import ReadMoreComponent from "~/components/ReadMore-component.vue";
+import ReadMoreComponent from "~/layouts/ReadMore-component.vue";
 export default {
   name: "StrategicAlliance",
-  components: {
-    ReadMoreComponent,
-  },
+  components: { ReadMoreComponent },
 
   data() {
     return {
@@ -56,17 +54,17 @@ export default {
       ut laboriosam velit consequuntur, ducimus, veritatis atque necessitatibus
       ullam nobis quos magnam reprehenderit cumque sapiente est in quam sit
       quisquam.`,
-      id_section1: `designAlterDescription`,
-      buttonTextReadLess2: "Leer menos",
-      buttonTextReadMore2: "Leer más",
-      previewMessage2:`Cafeto Software es una Empresa de Tecnología especializada en
+      id_section1: 'designAlterDescription',
+      buttonTextReadLessB2: "Leer menos",
+      buttonTextReadMoreB2: "Leer más",
+      previewMessageB2:`Cafeto Software es una Empresa de Tecnología especializada en
       transformación digital para empresas globales a través de servicios de
       consultoría en desarrollo de software`,
-      secondText2:`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ratione
+      secondTextB2:`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ratione
       ut laboriosam velit consequuntur, ducimus, veritatis atque necessitatibus
       ullam nobis quos magnam reprehenderit cumque sapiente est in quam sit
       quisquam.`,
-      id_section2: `cafetoDescription`
+      id_sectionB2: 'cafetoDescription'
     };
   },
 };

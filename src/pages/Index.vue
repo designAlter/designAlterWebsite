@@ -2,7 +2,7 @@
   <Layout>
     <HeaderDatum/>
     <WhatIsDatum/>
-    <StrategicAlliance />
+    <StrategicAlliance/>
     <ProductsServices/>
     <MasterPlan />
     <TechnologicalPartner />
