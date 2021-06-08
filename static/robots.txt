@@ -1,1 +1,1 @@
-Sitemap: https://datum.co/sitemap.xml
+Sitemap: https://cjuanjosec04.github.io/datum
