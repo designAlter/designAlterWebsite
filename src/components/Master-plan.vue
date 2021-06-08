@@ -11,11 +11,11 @@
             El plan maestro interactivo, TourDatum, incluye e integra, en una experiencia digital para manejar desde su
             dispositivo inteligente los recorridos urbanos y rurales, los destinos naturales y construidos, los módulos
             de desarrollo económico y las experiencias inmersas de emprendimiento.</p>
-          <b-link href="../assets/images/tourdatum_para_Fusagasuga_Plan_Maestro.pdf" size="md" class="mb-2"
-                  download="Tourdatum para Fusagasuga-Plan Maestro de Espacios Publicos Ditigal">
+          <g-link href="/tourdatum_para_Fusagasuga_Plan_Maestro.pdf" size="md" class="mb-2"
+                target="_blank"  download="Tourdatum para Fusagasuga-Plan Maestro de Espacios Publicos Ditigal">
             <b-icon icon="chevron-right" aria-hidden="true"></b-icon>
             Saber más
-          </b-link>
+          </g-link>
           <div class="master-datum-img">
             <g-image center alt="Tour Datum" src="../assets/images/TourDatum.png"/>
             <h4>TourDatum</h4>
