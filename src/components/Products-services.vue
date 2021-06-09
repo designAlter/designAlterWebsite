@@ -48,7 +48,8 @@
               <b-icon icon="x-circle-fill" aria-hidden="true"></b-icon>
             </b-button>
             <div class="background-color-video"></div>
-            <video src="../assets/video/RealDatum.mp4" autoplay loop muted></video>
+            <video src="../assets/video/RealDatum.mp4" poster="../assets/images/RealDatum.jpg"
+                   autoplay loop muted></video>
             <div class="modal-data">
               <h2>Real Datum</h2>
               <p>
@@ -73,7 +74,8 @@
               <b-icon icon="x-circle-fill" aria-hidden="true"></b-icon>
             </b-button>
             <div class="background-color-video"></div>
-            <video src="../assets/video/BizDatum.mp4" autoplay loop muted></video>
+            <video src="../assets/video/BizDatum.mp4" poster="../assets/images/BizDatum.jpg"
+                   autoplay loop muted></video>
             <div class="modal-data">
               <h2>Biz Datum</h2>
               <p>
@@ -98,7 +100,8 @@
               <b-icon icon="x-circle-fill" aria-hidden="true"></b-icon>
             </b-button>
             <div class="background-color-video"></div>
-            <video src="../assets/video/TourDatum.mp4" autoplay loop muted></video>
+            <video src="../assets/video/TourDatum.mp4" poster="../assets/images/TourDatum.jpg"
+                   autoplay loop muted></video>
             <div class="modal-data">
               <h2>Tour Datum</h2>
               <p>
@@ -125,7 +128,8 @@
               <b-icon icon="x-circle-fill" aria-hidden="true"></b-icon>
             </b-button>
             <div class="background-color-video"></div>
-            <video src="../assets/video/EduDatum.mp4" autoplay loop muted></video>
+            <video src="../assets/video/EduDatum.mp4" poster="../assets/images/EduDatum.jpg"
+                   autoplay loop muted></video>
             <div class="modal-data">
               <h2>Edu Datum</h2>
               <p>
@@ -149,7 +153,8 @@
               <b-icon icon="x-circle-fill" aria-hidden="true"></b-icon>
             </b-button>
             <div class="background-color-video"></div>
-            <video src="../assets/video/SocialDatum.mp4" autoplay loop muted></video>
+            <video src="../assets/video/SocialDatum.mp4" poster="../assets/images/SocialDatum.jpg"
+                   autoplay loop muted></video>
             <div class="modal-data">
               <h2>Social Datum</h2>
               <p>

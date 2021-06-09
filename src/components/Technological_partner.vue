@@ -7,18 +7,20 @@
             <b-icon icon="caret-right-fill" aria-hidden="true"></b-icon>
             Conoce nuestro aliado tecnológico
           </h2>
-          <g-image
-            id="poweredBy"
-            center
-            alt="Example image"
-            src="../assets/images/PoweredBy.png"
-          />
+          <a href="https://cafeto.co/">
+            <g-image
+                id="poweredBy"
+                center
+                alt="Example image"
+                src="../assets/images/PoweredBy.png"
+            />
+          </a>
         </b-col>
       </b-row>
       <b-row class="mt-5 padding-form-section">
         <b-col class="title_form_section" md="6">
           <h2 class="mb-0">
-            Cóntactanos
+            Contáctanos
           </h2>
           <hr class="hr-title m-0" />
           <b-col md="8">
