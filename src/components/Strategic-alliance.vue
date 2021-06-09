@@ -50,20 +50,14 @@ export default {
       previewMessage1:`DesignalterGroup es un cluster regional de planificación,
       arquitectura, diseño, tecnología e innovación social promovido por una
       cultura creativa. La compañía está orientada a impactar`,
-      secondText1:`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ratione
-      ut laboriosam velit consequuntur, ducimus, veritatis atque necessitatibus
-      ullam nobis quos magnam reprehenderit cumque sapiente est in quam sit
-      quisquam.`,
+      secondText1:`una gran variedad de territorios, comunidades y empresas. La firma opera desde Miami, Cartagena y Panamá.`,
       id_section1: 'designAlterDescription',
       buttonTextReadLessB2: "Leer menos",
       buttonTextReadMoreB2: "Leer más",
       previewMessageB2:`Cafeto Software es una Empresa de Tecnología especializada en
       transformación digital para empresas globales a través de servicios de
       consultoría en desarrollo de software`,
-      secondTextB2:`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ratione
-      ut laboriosam velit consequuntur, ducimus, veritatis atque necessitatibus
-      ullam nobis quos magnam reprehenderit cumque sapiente est in quam sit
-      quisquam.`,
+      secondTextB2:`mediante nuestro marco denominado Dream.Build.Boost el cual cuenta como base, nuestra experiencia tecnológica apoyada por nuestros ingenieros de alta calidad`,
       id_sectionB2: 'cafetoDescription'
     };
   },
