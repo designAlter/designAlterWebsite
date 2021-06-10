@@ -2,7 +2,7 @@
   <b-container fluid="md" id="strategic-alliance-container" class="mt-5 strategic-alliance-container">
     <b-row>
       <b-col md="12" class="title-section">
-        <h1><span class="second-color-title">Alianza</span> Estrategica</h1>
+        <h1><span class="second-color-title">Alianza</span> Estratégica</h1>
         <hr class=" mx-auto hr-title" />
       </b-col>
     </b-row>
