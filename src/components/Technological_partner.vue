@@ -7,7 +7,7 @@
             <b-icon icon="caret-right-fill" aria-hidden="true"></b-icon>
             Conoce nuestro aliado tecnológico
           </h2>
-          <a href="https://cafeto.co/">
+          <a href="https://cafeto.co/" target="_blank">
             <g-image
                 id="poweredBy"
                 center
@@ -35,7 +35,7 @@
           <b-form inline>
             <b-row class="mt-2">
               <b-col md="6">
-                <label class="sr-only mb-1" for="Name">Name</label>
+                <label class="sr-only mb-1" for="Name">Nombre Completo</label>
                 <b-form-input id="Name" class="mb-2 mr-sm-2 mb-sm-0">
                 </b-form-input>
               </b-col>
@@ -47,7 +47,7 @@
             </b-row>
             <b-row class="mt-2">
               <b-col md="6">
-                <label class="sr-only mb-1" for="Email">Email</label>
+                <label class="sr-only mb-1" for="Email">Correo Electrónico</label>
                 <b-form-input
                   v-model="email"
                   id="Email"

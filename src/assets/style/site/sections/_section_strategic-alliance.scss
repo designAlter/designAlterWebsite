@@ -14,10 +14,10 @@ body .strategic-alliance-container{
     }
     .hr-title{
         width: 5%;
-        height: 10%;
+        border: 2px solid $design_alter_color__primary;
+        background: $design_alter_color__primary;
         border-radius: 5px;
-        color: $design_alter_color__primary;
-        opacity: 100%;
+        opacity: 1;
     }
     .margin-from-title{
         margin-top: 10%;
