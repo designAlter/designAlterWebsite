@@ -35,8 +35,8 @@
           </p>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col sm="4" class="services-datum-modal">
+      <b-row align-h="center" cols="1" cols-sm="3" cols-md="5" cols-lg="5">
+        <b-col class="services-datum-modal">
           <g-image center alt="Real Datum"  @click="showModal('modal-RealDatum')" src="../assets/images/RealDatum.png"/>
           <h4>RealDatum</h4>
           <p>(Planes maestros interactivos)</p>
@@ -62,7 +62,7 @@
             </div>
           </div>
         </b-modal>
-        <b-col sm="4" class="services-datum-modal">
+        <b-col class="services-datum-modal">
           <g-image center alt="Biz Datum"  @click="showModal('modal-BizDatum')" src="../assets/images/BizDatum.png"/>
           <h4>BizDatum</h4>
           <p>(Creación de nuevos negocios)</p>
@@ -87,8 +87,7 @@
             </div>
           </div>
         </b-modal>
-
-        <b-col sm="4" class="services-datum-modal">
+        <b-col class="services-datum-modal">
           <g-image center alt="Tour Datum" @click="showModal('modal-TourDatum')" src="../assets/images/TourDatum.png"/>
           <h4>TourDatum</h4>
           <p>(Planes maestros de turismo integrado)</p>
@@ -114,9 +113,7 @@
             </div>
           </div>
         </b-modal>
-      </b-row>
-      <b-row>
-        <b-col sm="6" class="services-datum-modal">
+        <b-col class="services-datum-modal">
           <g-image center alt="Edu Datum" @click="showModal('modal-EduDatum')" src="../assets/images/EduDatum.png"/>
           <h4>EduDatum</h4>
           <p>(Diseño, tecnología y conocimiento)</p>
@@ -141,7 +138,7 @@
             </div>
           </div>
         </b-modal>
-        <b-col sm="6" class="services-datum-modal">
+        <b-col class="services-datum-modal">
           <g-image center alt="Social Datum" @click="showModal('modal-SocialDatum')" src="../assets/images/SocialDatum.png"/>
           <h4>SocialDatum</h4>
           <p>(Desarrollo de marcas sociales)</p>
