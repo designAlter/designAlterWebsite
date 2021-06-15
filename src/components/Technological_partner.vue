@@ -109,8 +109,6 @@
 </template>
 
 <script>
-import { VueReCaptcha, useReCaptcha } from "vue-recaptcha-v3";
-
 export default {
   data() {
     return {
