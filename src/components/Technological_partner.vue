@@ -115,10 +115,10 @@ export default {
   data() {
     return {
       form: {
-        name: "JuanjoName",
+        name: "NameTest",
         company: "TestCafeto",
-        email: "jc@gm.com",
-        subject: "contacto Tecnico",
+        email: "testcafeto@testemail.com",
+        subject: "Testsubject",
         message: "Hola Design Alter esto es un test",
       },
     };
@@ -144,7 +144,7 @@ export default {
         },
         to: [
           {
-            email: "jcastro@cafetosoftware.com",
+            email: "da-support@cafetosoftware.com",
             name: "Juanjo",
           },
         ],
