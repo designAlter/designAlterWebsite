@@ -14,10 +14,13 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '~/assets/style/main.scss'
 
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
   Vue.use(BootstrapVueIcons)
+  head.script.push({
+      src: 'https://www.google.com/recaptcha/api.js?render=6Lc1DzYbAAAAAFfsrKknjDScYjV9ALkDC7IrrkVP',
+      body: false
+  })
   head.link.push(
     {
       rel: 'stylesheet',
