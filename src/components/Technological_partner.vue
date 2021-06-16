@@ -109,8 +109,11 @@
 </template>
 
 <script>
-import { VueReCaptcha, useReCaptcha } from "vue-recaptcha-v3";
-
+import {
+  SENDIBLUE_APIKEY,
+  SITE_KEY_REACAPTCHA,
+  SECRET_KEY_RECAPTCHA,
+} from "../../static/variables.json";
 export default {
   data() {
     return {
@@ -123,18 +126,12 @@ export default {
       },
     };
   },
+
   methods: {
     async postData(url = "https://api.sendinblue.com/v3/smtp/email") {
       var myHeaders = new Headers();
-      myHeaders.append(
-        "api-key",
-        "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"
-      );
+      myHeaders.append("api-key", SENDIBLUE_APIKEY);
       myHeaders.append("Content-Type", "application/json");
-      myHeaders.append(
-        "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",
-        "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"
-      );
       var bodyEmail = JSON.stringify({
         name: this.form.name,
         subject: "[Contacto Pagina web - Design alter]",
@@ -164,14 +161,44 @@ export default {
         headers: myHeaders,
         body: bodyEmail,
       });
+      console.log(response);
       return response.json();
     },
 
+    async recaptchaValidation(token) {
+      var googleUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_RECAPTCHA}&response=${token}`;
+      const response = await fetch(googleUrl, {
+        method: "POST",
+        mode: "cors",
+        cache: "no-cache",
+      });
+      return response.json();
+    },
+
+    recaptchaToken() {
+      return new Promise((resolve) => {
+        grecaptcha.ready(async () => {
+          const token = await grecaptcha.execute(SITE_KEY_REACAPTCHA);
+          resolve(token);
+        });
+      });
+    },
+
     OnSubmit(event) {
+      alert(SENDIBLUE_APIKEY);
+      alert(SECRET_KEY_RECAPTCHA);
       event.preventDefault();
-      alert(JSON.stringify(this.form));
-      this.postData().then((data) => {
-        console.log(data);
+      var response = this.recaptchaToken();
+      response.then((token) => {
+        var responseValidation = this.recaptchaValidation(token);
+        responseValidation.then((response) => {
+          console.log(response.success);
+          if (response.success && response.score >= 0.5) {
+            this.postData().then((data) => {
+              console.log(data);
+            });
+          }
+        });
       });
     },
     onReset(event) {
