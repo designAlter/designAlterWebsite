@@ -22,4 +22,8 @@ body {
       }
     }
   }
+  .cm-modal > .cm-header > p,
+  .cm-footer > .cm-powered-by > a{
+    display: none;
+  }
 }

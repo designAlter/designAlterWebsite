@@ -45,6 +45,44 @@ module.exports = {
           },
         }
       }
+    },
+    {
+      use: 'klaro-gridsome',
+      options: {
+          privacyPolicy: '/privacy',
+          cookieName: 'consent',
+          translations: {
+              en: {
+                  consentModal: {
+                      description: 'Customise the information that we collect about you.',
+                  },
+                  googleAnalytics: {
+                      description: 'All cookies enabled'
+                  },
+                  purposes: {
+                      analytics: 'Analytics'
+                  },
+              },
+          },
+          apps: [
+              {
+                  name: 'googleAnalytics',
+                  default: true,
+                  title: 'Cookies',
+                  //purposes: ['analytics'],
+                  cookies: [
+                      '_ga',
+                      '_gcl_au',
+                      '_gid',
+                      '_gat'
+                  ],
+                  required: true,
+                  optOut: false,
+                  onlyOnce: true
+              }
+          ]
+      }
     }
+    
   ],
 }
