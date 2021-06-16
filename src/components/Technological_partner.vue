@@ -114,6 +114,7 @@ import {
   SITE_KEY_REACAPTCHA,
   SECRET_KEY_RECAPTCHA,
 } from "../../static/variables.json";
+
 export default {
   data() {
     return {
