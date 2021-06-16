@@ -162,7 +162,6 @@ export default {
         headers: myHeaders,
         body: bodyEmail,
       });
-      console.log(response);
       return response.json();
     },
 
@@ -186,17 +185,13 @@ export default {
     },
 
     OnSubmit(event) {
-      alert(SENDIBLUE_APIKEY);
-      alert(SECRET_KEY_RECAPTCHA);
       event.preventDefault();
       var response = this.recaptchaToken();
       response.then((token) => {
         var responseValidation = this.recaptchaValidation(token);
         responseValidation.then((response) => {
-          console.log(response.success);
           if (response.success && response.score >= 0.5) {
             this.postData().then((data) => {
-              console.log(data);
             });
           }
         });
