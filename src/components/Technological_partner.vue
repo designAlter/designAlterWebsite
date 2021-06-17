@@ -97,9 +97,9 @@
             <b-row align-h="end">
               <b-col md="5">
                 <b-button class="w-100" type="submit" variant="dark">
-                  Enviar
+                   <b-spinner id="spinner-button" variant="success" label=""></b-spinner> Enviar
                 </b-button>
-                <b-alert style="display:none" id="sucess-alert" variant="success" show>Success Alert</b-alert>
+                <b-alert id="sucess-alert" variant="success" show>Listo! pronto nos pondremos en contacto contigo</b-alert>
               </b-col>
             </b-row>
           </b-form>
@@ -186,6 +186,8 @@ export default {
     },
 
     OnSubmit(event) {
+      var SpinnerButton  = document.getElementById(`spinner-button`);
+      SpinnerButton.style.display="inline-block";
       event.preventDefault();
       var response = this.recaptchaToken();
       response.then((token) => {
@@ -193,6 +195,9 @@ export default {
         responseValidation.then((response) => {
           if (response.success && response.score >= 0.5) {
             this.postData().then((data) => {
+              var alertsuccess = document.getElementById(`sucess-alert`);
+               alertsuccess.style.display ="block";
+              SpinnerButton.style.display="none";
             });
           }
         });
