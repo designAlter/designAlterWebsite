@@ -35,7 +35,7 @@
           <b-form @submit="OnSubmit" @reset="onReset" inline>
             <b-row class="mt-2">
               <b-col md="6">
-                <label class="sr-only mb-1" for="Name">Nombre Completo</label>
+                <label class="sr-only mb-1" for="Name">Nombre Completo*</label>
                 <b-form-input
                   id="Name"
                   class="mb-2 mr-sm-2 mb-sm-0"
@@ -45,7 +45,7 @@
                 </b-form-input>
               </b-col>
               <b-col md="6">
-                <label class="sr-only mb-1" for="Compañia">Compañia</label>
+                <label class="sr-only mb-1" for="Compañia">Compañia*</label>
                 <b-form-input
                   id="Compañia"
                   class="mb-2 mr-sm-2 mb-sm-0"
@@ -58,7 +58,7 @@
             <b-row class="mt-2">
               <b-col md="6">
                 <label class="sr-only mb-1" for="Email">
-                  Correo Electrónico
+                  Correo Electrónico*
                 </label>
                 <b-form-input
                   v-model="form.email"
@@ -70,7 +70,7 @@
                 </b-form-input>
               </b-col>
               <b-col md="6">
-                <label class="sr-only mb-1" for="Asunto">Asunto</label>
+                <label class="sr-only mb-1" for="Asunto">Asunto*</label>
                 <b-form-input
                   id="Asunto"
                   v-model="form.subject"
@@ -83,7 +83,7 @@
             </b-row>
             <b-row class="mt-2">
               <b-col>
-                <label class="sr-only mb-1" for="Mensaje">Mensaje</label>
+                <label class="sr-only mb-1" for="Mensaje">Mensaje*</label>
                 <b-form-textarea
                   id="Mensaje"
                   size="lg"
@@ -99,6 +99,7 @@
                 <b-button class="w-100" type="submit" variant="dark">
                   Enviar
                 </b-button>
+                <b-alert style="display:none" id="sucess-alert" variant="success" show>Success Alert</b-alert>
               </b-col>
             </b-row>
           </b-form>
