@@ -35,7 +35,7 @@
           <b-form @submit="OnSubmit" @reset="onReset" inline>
             <b-row class="mt-2">
               <b-col md="6">
-                <label class="sr-only mb-1" for="Name">Nombre Completo</label>
+                <label class="sr-only mb-1" for="Name">Nombre Completo*</label>
                 <b-form-input
                   id="Name"
                   class="mb-2 mr-sm-2 mb-sm-0"
@@ -45,7 +45,7 @@
                 </b-form-input>
               </b-col>
               <b-col md="6">
-                <label class="sr-only mb-1" for="Compañia">Compañia</label>
+                <label class="sr-only mb-1" for="Compañia">Compañia*</label>
                 <b-form-input
                   id="Compañia"
                   class="mb-2 mr-sm-2 mb-sm-0"
@@ -58,7 +58,7 @@
             <b-row class="mt-2">
               <b-col md="6">
                 <label class="sr-only mb-1" for="Email">
-                  Correo Electrónico
+                  Correo Electrónico*
                 </label>
                 <b-form-input
                   v-model="form.email"
@@ -70,7 +70,7 @@
                 </b-form-input>
               </b-col>
               <b-col md="6">
-                <label class="sr-only mb-1" for="Asunto">Asunto</label>
+                <label class="sr-only mb-1" for="Asunto">Asunto*</label>
                 <b-form-input
                   id="Asunto"
                   v-model="form.subject"
@@ -83,7 +83,7 @@
             </b-row>
             <b-row class="mt-2">
               <b-col>
-                <label class="sr-only mb-1" for="Mensaje">Mensaje</label>
+                <label class="sr-only mb-1" for="Mensaje">Mensaje*</label>
                 <b-form-textarea
                   id="Mensaje"
                   size="lg"
@@ -97,8 +97,9 @@
             <b-row align-h="end">
               <b-col md="5">
                 <b-button class="w-100" type="submit" variant="dark">
-                  Enviar
+                   <b-spinner id="spinner-button" variant="success" label=""></b-spinner> Enviar
                 </b-button>
+                <b-alert id="sucess-alert" variant="success" show>Listo! pronto nos pondremos en contacto contigo</b-alert>
               </b-col>
             </b-row>
           </b-form>
@@ -185,6 +186,8 @@ export default {
     },
 
     OnSubmit(event) {
+      var SpinnerButton  = document.getElementById(`spinner-button`);
+      SpinnerButton.style.display="inline-block";
       event.preventDefault();
       var response = this.recaptchaToken();
       response.then((token) => {
@@ -192,6 +195,9 @@ export default {
         responseValidation.then((response) => {
           if (response.success && response.score >= 0.5) {
             this.postData().then((data) => {
+              var alertsuccess = document.getElementById(`sucess-alert`);
+               alertsuccess.style.display ="block";
+              SpinnerButton.style.display="none";
             });
           }
         });
