@@ -196,7 +196,6 @@ export default {
         responseValidation.then((response) => {
           if (response.success && response.score >= 0.5) {
             this.postData().then((data) => {
-              console.log(data);
               var alertsuccess = document.getElementById(`sucess-alert`);
                alertsuccess.style.display ="block";
               SpinnerButton.style.display="none";
