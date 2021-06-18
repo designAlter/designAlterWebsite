@@ -1,1 +1,1 @@
-Sitemap: https://cjuanjosec04.github.io/TestGitHubPages/sitemap.xml
+Sitemap: https://designAlter.github.io/designAlter/sitemap.xml

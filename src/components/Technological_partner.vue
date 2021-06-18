@@ -138,13 +138,13 @@ export default {
         name: this.form.name,
         subject: "[Contacto Pagina web - Design alter]",
         sender: {
-          name: "DesignAlterWeb",
-          email: "juanjosecastrocruz@gmail.com",
+          name: "Design Alter Website",
+          email: "designalterboutique@gmail.com",
         },
         to: [
           {
-            email: "da-support@cafetosoftware.com",
-            name: "Juanjo",
+            email: "jcastro@cafetosoftware.com",
+            name: "Juan Jose Castro Cruz",
           },
         ],
         templateId: 2,
