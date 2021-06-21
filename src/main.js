@@ -13,12 +13,16 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 //global stylesheet
 import '~/assets/style/main.scss'
 
+import {
+  SITE_KEY_REACAPTCHA,
+} from "../static/variables.json";
+
 export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
   Vue.use(BootstrapVueIcons)
   head.script.push({
-      src: 'https://www.google.com/recaptcha/api.js?render=6Lc1DzYbAAAAAFfsrKknjDScYjV9ALkDC7IrrkVP',
+      src: `https://www.google.com/recaptcha/api.js?render=${SITE_KEY_REACAPTCHA}`,
       body: false
   })
   head.link.push(
