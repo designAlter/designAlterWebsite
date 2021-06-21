@@ -120,11 +120,11 @@ export default {
   data() {
     return {
       form: {
-        name: "NameTest",
-        company: "TestCafeto",
-        email: "testcafeto@testemail.com",
-        subject: "Testsubject",
-        message: "Hola Design Alter esto es un test",
+        name: "",
+        company: "",
+        email: "",
+        subject: "",
+        message: "",
       },
     };
   },
@@ -143,11 +143,12 @@ export default {
         },
         to: [
           {
-            email: "jcastro@cafetosoftware.com",
-            name: "Juan Jose Castro Cruz",
+            email: "designalterboutique@gmail.com",
+            name: "Design Alter Website",
           },
         ],
-        templateId: 2,
+        templateId: 1,
+
         params: {
           NOMBRE: this.form.name,
           COMPANY: this.form.company,

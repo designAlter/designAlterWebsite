@@ -1,1 +1,1 @@
-Sitemap: https://designAlter.github.io/designAlter/sitemap.xml
+Sitemap: https://designAlter.github.io/designAlterWebsite/sitemap.xml

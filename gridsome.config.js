@@ -19,7 +19,7 @@ function addStyleResource (rule) {
 module.exports = {
   siteName: 'Design alter',
   siteUrl: 'https://designAlter.github.io',
-  pathPrefix: '/designAlter',
+  pathPrefix: '/designAlterWebsite',
   icon: {
     favicon: './src/favicon.png',
   },
