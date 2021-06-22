@@ -120,11 +120,11 @@ export default {
   data() {
     return {
       form: {
-        name: "",
-        company: "",
-        email: "",
-        subject: "",
-        message: "",
+        name: "Juan Jose Test",
+        company: "Cafeto Test",
+        email: "test@test.com",
+        subject: "TestCafeto",
+        message: "Esto es un test",
       },
     };
   },
@@ -159,7 +159,6 @@ export default {
       });
       const response = await fetch(url, {
         method: "POST",
-        mode: "cors",
         cache: "no-cache",
         headers: myHeaders,
         body: bodyEmail,
@@ -168,13 +167,33 @@ export default {
     },
 
     async recaptchaValidation(token) {
-      var googleUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_RECAPTCHA}&response=${token}`;
-      const response = await fetch(googleUrl, {
+      var httpHeaders = { 'Access-Control-Allow-headers' : '*', 'Access-Control-Allow-Origin' : '*', 'Access-Control-Request-Method':'*' };
+      var myHeaders2 = new Headers();
+      myHeaders2.append("Content-Type", "application/json");
+      myHeaders2.append("Access-Control-Allow-Origin", "*");
+      var headersTest =  {
+        'Content-Type': 'application/json',
+        // 'Access-Control-Allow-Origin': '*',
+      };
+      var bodyRecaptcha = {
+        'secret':`${SECRET_KEY_RECAPTCHA}`,
+        'response':`${token}`,
+      };
+
+      var googleUrl = `https://www.google.com/recaptcha/api/siteverify`;
+      await fetch(googleUrl, {
+      headers:{
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Accept': '*/*',
+      },
         method: "POST",
-        mode: "cors",
         cache: "no-cache",
+        body: bodyRecaptcha
+      }).then(response => {
+        console.log(response);
+        return response.json();
       });
-      return response.json();
     },
 
     recaptchaToken() {
