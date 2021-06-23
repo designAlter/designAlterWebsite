@@ -182,17 +182,17 @@ export default {
 </script>
 
 <style scoped>
-.modal-products-services .modal-content {
+/deep/ .modal-products-services .modal-content {
   border-radius: 28px;
   height: 640px;
   overflow: hidden;
 }
 
-.modal-products-services .modal-content .modal-body {
+/deep/ .modal-products-services .modal-content .modal-body {
   border-radius: 28px;
 }
 
-.modal-products-services .modal-body .content-modal-services .background-color-video {
+/deep/ .modal-products-services .modal-body .content-modal-services .background-color-video {
   position: absolute;
   background-color: #0F0F0F;
   width: 100%;
@@ -203,7 +203,7 @@ export default {
   z-index: 15;
 }
 
-.modal-products-services .modal-body .content-modal-services video {
+/deep/ .modal-products-services .modal-body .content-modal-services video {
   position: absolute;
   border-radius: 28px;
   width: 100%;
@@ -213,7 +213,7 @@ export default {
   z-index: 10;
 }
 
-.modal-products-services .modal-body button {
+/deep/ .modal-products-services .modal-body button {
   position: relative;
   color: #ffffff;
   left: 95%;
@@ -222,7 +222,7 @@ export default {
   z-index: 20;
 }
 
-.modal-products-services .modal-body .content-modal-services .modal-data {
+/deep/ .modal-products-services .modal-body .content-modal-services .modal-data {
   position: absolute;
   color: #ffffff;
   bottom: 5%;
@@ -230,36 +230,36 @@ export default {
   z-index: 20;
 }
 
-.modal-products-services .modal-body .content-modal-services .modal-data h2 {
+/deep/ .modal-products-services .modal-body .content-modal-services .modal-data h2 {
   font-size: 2rem;
 }
 
-.modal-products-services .modal-body .content-modal-services .modal-data p {
+/deep/ .modal-products-services .modal-body .content-modal-services .modal-data p {
   font-size: 1.2rem;
 }
 
 @media (max-width: 1200px) {
-  .modal-products-services .modal-content {
+  /deep/ .modal-products-services .modal-content {
     height: 700px;
   }
 
-  .modal-products-services .modal-body .content-modal-services video {
+  /deep/ .modal-products-services .modal-body .content-modal-services video {
     width: 1450px;
   }
 }
 
 @media (max-width: 991px) {
-  .modal-products-services .modal-body button {
+  /deep/ .modal-products-services .modal-body button {
     left: 90%;
   }
 }
 
 @media (max-width: 480px) {
-  .modal-products-services .modal-body button {
+  /deep/ .modal-products-services .modal-body button {
     left: 85%;
   }
 
-  .modal-products-services .modal-body .content-modal-services .modal-data {
+  /deep/ .modal-products-services .modal-body .content-modal-services .modal-data {
     padding: 0;
   }
 }
