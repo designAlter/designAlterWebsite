@@ -19,7 +19,7 @@
           <h4>Design alter Foundation:</h4>
           <p>Santiago Carvajal  57 310 4514134</p>
           <h4>Cafeto Software:</h4>
-          <p>Nombre de contacto</p>
+          <p>Sales Team <a href="mailto:sales@cafetosoftware.com">sales@cafetosoftware.com</a></p>
         </b-col>
       </b-row>
     </b-container>

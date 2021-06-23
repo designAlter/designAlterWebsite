@@ -2,7 +2,7 @@
   <div class="section-header-datum">
     <div class="background-color-video"></div>
     <video src="../assets/video/Definicion_de_datums.mp4" autoplay loop muted playsInline
-      poster="../assets/images/header-datum.png"></video>
+      poster="../assets/images/header-datum.jpg"></video>
     <b-container class="container-header">
       <div class="content-info">
         <g-image
