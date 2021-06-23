@@ -95,8 +95,9 @@
               </b-col>
             </b-row>
             <b-row align-h="end">
-              <b-col md="5">
-                <b-button class="w-100" type="submit" variant="dark">
+              <b-col md="6">
+                <div class="w-100" id="recaptcha"></div>
+                <b-button id="submitButton" class="w-100 g-recaptcha" type="submit" variant="dark">
                    <b-spinner id="spinner-button" variant="success" label=""></b-spinner> Enviar
                 </b-button>
                 <b-alert id="sucess-alert" variant="success" show>Listo! pronto nos pondremos en contacto contigo</b-alert>
@@ -108,27 +109,38 @@
     </b-container>
   </div>
 </template>
-
 <script>
-import {
-  SENDIBLUE_APIKEY,
-  SITE_KEY_REACAPTCHA,
-  SECRET_KEY_RECAPTCHA,
-} from "../../static/variables.json";
+    import {
+      SENDIBLUE_APIKEY,
+      SITE_KEY_REACAPTCHA,
+    } from "../../static/variables.json";
+  window.onloadCallback = () => {
+    document.getElementById('submitButton').disabled = true;
+    grecaptcha.render('recaptcha',{
+      'sitekey' : SITE_KEY_REACAPTCHA,
+      'callback' : verifyCallback,
+      'theme' : 'ligth'
+    })
+  };
+
+  window.verifyCallback = function() {
+        document.getElementById('submitButton').disabled = false;
+  };
 
 export default {
   data() {
     return {
       form: {
-        name: "Juan Jose Test",
-        company: "Cafeto Test",
-        email: "test@test.com",
-        subject: "TestCafeto",
-        message: "Esto es un test",
+        name: "",
+        company: "",
+        email: "",
+        subject: "",
+        message: "",
       },
+      site_key: SITE_KEY_REACAPTCHA,
     };
   },
-
+    
   methods: {
     async postData(url = "https://api.sendinblue.com/v3/smtp/email") {
       var myHeaders = new Headers();
@@ -166,63 +178,17 @@ export default {
       return response.json();
     },
 
-    async recaptchaValidation(token) {
-      var httpHeaders = { 'Access-Control-Allow-headers' : '*', 'Access-Control-Allow-Origin' : '*', 'Access-Control-Request-Method':'*' };
-      var myHeaders2 = new Headers();
-      myHeaders2.append("Content-Type", "application/json");
-      myHeaders2.append("Access-Control-Allow-Origin", "*");
-      var headersTest =  {
-        'Content-Type': 'application/json',
-        // 'Access-Control-Allow-Origin': '*',
-      };
-      var bodyRecaptcha = {
-        'secret':`${SECRET_KEY_RECAPTCHA}`,
-        'response':`${token}`,
-      };
-
-      var googleUrl = `https://www.google.com/recaptcha/api/siteverify`;
-      await fetch(googleUrl, {
-      headers:{
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Accept': '*/*',
-      },
-        method: "POST",
-        cache: "no-cache",
-        body: bodyRecaptcha
-      }).then(response => {
-        console.log(response);
-        return response.json();
-      });
-    },
-
-    recaptchaToken() {
-      return new Promise((resolve) => {
-        grecaptcha.ready(async () => {
-          const token = await grecaptcha.execute(SITE_KEY_REACAPTCHA);
-          resolve(token);
-        });
-      });
-    },
-
     OnSubmit(event) {
+      event.preventDefault();
       var SpinnerButton  = document.getElementById(`spinner-button`);
       SpinnerButton.style.display="inline-block";
-      event.preventDefault();
-      var response = this.recaptchaToken();
-      response.then((token) => {
-        var responseValidation = this.recaptchaValidation(token);
-        responseValidation.then((response) => {
-          if (response.success && response.score >= 0.5) {
-            this.postData().then((data) => {
-              var alertsuccess = document.getElementById(`sucess-alert`);
-               alertsuccess.style.display ="block";
-              SpinnerButton.style.display="none";
-            });
-          }
-        });
+      this.postData().then((data) => {
+        var alertsuccess = document.getElementById(`sucess-alert`);
+        alertsuccess.style.display ="block";
+        SpinnerButton.style.display="none";
       });
     },
+    
     onReset(event) {
       event.preventDefault();
       (this.form.name = ""),
@@ -231,6 +197,34 @@ export default {
         (this.form.subject = ""),
         (this.form.message = "");
     },
+
+
+
+    execute () {
+      window.grecaptcha.execute(this.widgetId)
+    },
+    reset () {
+      window.grecaptcha.reset(this.widgetId)
+    },
+    render () {
+      if (window.grecaptcha) {
+        this.widgetId = window.grecaptcha.render('g-recaptcha', {
+          sitekey: this.sitekey,
+          size: 'invisible',
+          // the callback executed when the user solve the recaptcha
+          callback: (response) => {
+            // emit an event called verify with the response as payload
+            this.$emit('verify', response)
+            // reset the recaptcha widget so you can execute it again
+            this.reset() 
+          }
+        })
+      }
+    }
+
+
+
+
   },
 };
 </script>
