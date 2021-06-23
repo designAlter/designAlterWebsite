@@ -53,12 +53,10 @@
             <div class="modal-data">
               <h2>Real Datum</h2>
               <p>
-                El plan ofrece la integración de avenidades, actividades e infraestructura complementaria dentro de
-                proyectos de uso mixto sobre tierra y sobre agua.
+                El plan ofrece la integración de amenidades, actividades e infraestructura complementaria dentro de proyectos de uso mixto sobre tierra y sobre agua.
               </p>
               <h3>Sectores Foco Promotores de proyectos de :</h3>
-              <p>Entretenimiento, Hotelería, Comercial, Tecnológico, Salud, bienestar y estilo de vida, Deportes,
-                Residencial.</p>
+              <p>Entretenimiento, Hotelería, Comercial, Tecnología, Salud, Bienestar y Estilo de vida, Deportes Residenciales.</p>
             </div>
           </div>
         </b-modal>
@@ -130,11 +128,12 @@
             <div class="modal-data">
               <h2>Edu Datum</h2>
               <p>
-                El plan integra, a nivel académico, los conocimientos generados desde el diseño y la tecnologia con el
-                pensum de otras profesiones para el enriquesimiento de sus programas.
+                El plan integra, a nivel académico, los conocimientos generados desde el diseño y la tecnología con el pensum de otras
+                profesiones para el enriquecimiento de sus programas especiales.
               </p>
               <h3>EduDatum: Sectores foco desde todas las disciplinas:</h3>
-              <p>Estudiantes, Profesionales, Docentes, Investigadores</p>
+              <p>Universidades, Empresas Públicas y Privadas,  Compañías de Tecnología, innovación e investigación y 
+                firmas relacionadas con la creación de Nuevos Negocios y de Turismo</p>
             </div>
           </div>
         </b-modal>
