@@ -110,22 +110,10 @@
   </div>
 </template>
 <script>
-    import {
-      SENDIBLUE_APIKEY,
-      SITE_KEY_REACAPTCHA,
-    } from "../../static/variables.json";
-  window.onloadCallback = () => {
-    document.getElementById('submitButton').disabled = true;
-    grecaptcha.render('recaptcha',{
-      'sitekey' : SITE_KEY_REACAPTCHA,
-      'callback' : verifyCallback,
-      'theme' : 'ligth'
-    })
-  };
-
-  window.verifyCallback = function() {
-        document.getElementById('submitButton').disabled = false;
-  };
+import {
+  SENDIBLUE_APIKEY,
+  SITE_KEY_REACAPTCHA,
+} from "../../static/variables.json";
 
 export default {
   data() {
@@ -138,6 +126,20 @@ export default {
         message: "",
       },
       site_key: SITE_KEY_REACAPTCHA,
+    };
+  },
+
+  mounted(){
+    window.onloadCallback = function() {
+      document.getElementById('submitButton').disabled = true;
+      grecaptcha.render('recaptcha',{
+        'sitekey' : SITE_KEY_REACAPTCHA,
+        'callback' : verifyCallback,
+        'theme' : 'ligth'
+      })
+    };
+    window.verifyCallback = function() {
+          document.getElementById('submitButton').disabled = false;
     };
   },
     

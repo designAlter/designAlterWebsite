@@ -8,7 +8,7 @@
             Qué es un <span>Datum?</span>
           </h2>
           <p>
-            Un Datum es un punto en la tierra usado para localizar la latitud y la longitudde una idea que tenga el
+            Un Datum es un punto en la tierra usado para localizar la latitud y la longitud de una idea que tenga el
             potencial de informar, integrar y generar nuevos negocios que beneficien a la sociedad.
           </p>
         </b-col>
