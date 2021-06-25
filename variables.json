@@ -3,5 +3,9 @@
     "SITE_KEY_REACAPTCHA":"6Lejgk4bAAAAALN77Prc_Salsi-iNTQMOk9A-ZTe",
     "SECRET_KEY_RECAPTCHA":"6LeenEAbAAAAAKKaL96Xeq5fCvZTsAzz8dTc2Gws",
     "INSTAGRAMURL":"",
-    "LINKEDINURL":""
+    "LINKEDINURL":"",
+    "CafetoSalesName":"Sales Team",
+    "CafetoSalesemail":"sales1@cafetosoftware.com",
+    "DesignAlteContactName":"Santiago Carvajal ",
+    "DesignAlterContactPhone":"+57 310 4514134"
 }
