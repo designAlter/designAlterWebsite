@@ -161,7 +161,7 @@
                 </b-modal>
               <b-col md="6">
                 <div class="w-100" id="recaptcha"></div>
-                <b-button id="submitButton" class="w-100 g-recaptcha" type="submit" variant="dark">
+                <b-button id="submitButton" class="w-100 g-recaptcha" type="button" variant="dark">
                    <b-spinner id="spinner-button" variant="success" label=""></b-spinner> Enviar
                 </b-button>
                 <b-alert id="sucess-alert" variant="success" show>Listo! pronto nos pondremos en contacto contigo</b-alert>
@@ -204,6 +204,7 @@ export default {
     };
     window.verifyCallback = function() {
           document.getElementById('submitButton').disabled = false;
+          document.getElementById('submitButton').type = "submit";
     };
   },
     
@@ -270,6 +271,7 @@ export default {
       this.form.email = "",
       this.form.subject = "",
       this.form.message = "";
+      document.getElementById('submitButton').disabled = true;
     },
 
 

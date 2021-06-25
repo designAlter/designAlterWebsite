@@ -17,10 +17,10 @@
         <h5>Digital Interactive Master Plans</h5>
       </div>
       <div class="content-icons">
-        <a href="#">
+        <a v-if="instagram" href="#">
           <b-icon icon="instagram" aria-hidden="true"></b-icon>
         </a>
-        <a href="#">
+        <a v-if="linkedin" href="#">
           <b-icon icon="linkedin" aria-hidden="true"></b-icon>
         </a>
       </div>
@@ -29,7 +29,18 @@
 </template>
 
 <script>
+  import {
+    INSTAGRAMURL,
+    LINKEDINURL
+} from "../../static/variables.json";
 export default {
-  name: "Header-datum"
+
+  name: "Header-datum",
+  data(){
+    return{
+      instagram: INSTAGRAMURL,
+      linkedin: LINKEDINURL
+    }
+  }
 }
 </script>
