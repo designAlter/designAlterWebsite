@@ -17,9 +17,9 @@
         </b-col>
         <b-col sm="6">
           <h4>Design alter Foundation:</h4>
-          <p>Santiago Carvajal  57 310 4514134</p>
+          <p><span v-if="DesignAlteContactName">{{DesignAlteContactName}}</span><a v-if="DesignAlterContactPhone" :href ='`tel:${DesignAlterContactPhone}`'>{{DesignAlterContactPhone}}</a></p>
           <h4>Cafeto Software:</h4>
-          <p>Sales Team <a href="mailto:sales@cafetosoftware.com">sales@cafetosoftware.com</a></p>
+          <p><span v-if="CafetoSalesName">{{ CafetoSalesName }} </span> <a v-if="CafetoSalesemail" :href ='`mailto:${CafetoSalesemail}`'>{{CafetoSalesemail}}</a></p>
         </b-col>
       </b-row>
     </b-container>
@@ -29,14 +29,22 @@
 <script>
   import {
     INSTAGRAMURL,
-    LINKEDINURL
+    LINKEDINURL,
+    CafetoSalesName,
+    CafetoSalesemail,
+    DesignAlteContactName,
+    DesignAlterContactPhone,
 } from "../../static/variables.json";
 export default {
   name: "Footer",
   data(){
     return{
       instagram: INSTAGRAMURL,
-      linkedin: LINKEDINURL
+      linkedin: LINKEDINURL,
+      CafetoSalesName:CafetoSalesName,
+      CafetoSalesemail:CafetoSalesemail,
+      DesignAlteContactName:DesignAlteContactName,
+      DesignAlterContactPhone:DesignAlterContactPhone,
     }
   }
 }
